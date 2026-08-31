@@ -242,6 +242,18 @@ h2.failed-career input {
     color: white;
     background-color: black;
     margin-bottom: 4px;
+    overflow-wrap: anywhere;
+}
+
+.electricbastionland.sheet.item .grid-4col .resource {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.electricbastionland.sheet.item .grid-4col .resource-label {
+    width: 100%;
+    font-size: 0.9em;
 }
 
 .electricbastionland .tabs {
@@ -272,7 +284,8 @@ h2.failed-career input {
 }
 
 .electricbastionland .items-list .item {
-    height: 30px;
+    min-height: 30px;
+    height: auto;
     line-height: 24px;
     padding: 3px 0;
     border-bottom: 1px solid #BBB;
@@ -298,6 +311,17 @@ h2.failed-career input {
     -ms-flex: 0 0 86px;
     flex: 0 0 86px;
     text-align: right;
+}
+
+.electricbastionland .items-list .item-header .item-name {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.electricbastionland .items-list .item-header .item-controls {
+    flex: 0 0 auto;
+    margin-left: 8px;
+    white-space: nowrap;
 }
 
 .electricbastionland .too-bulky {

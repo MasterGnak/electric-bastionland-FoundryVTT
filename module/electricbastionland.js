@@ -7,9 +7,15 @@ import { ElectricBastionlandItemSheet } from "./item/item-sheet.js";
 Hooks.once('init', async function () {
     // Register sheet application classes
     Actors.unregisterSheet("core", ActorSheet);
-    Actors.registerSheet("electricbastionland", ElectricBastionlandActorSheet, {makeDefault: true});
+    Actors.registerSheet("electricbastionland", ElectricBastionlandActorSheet, {
+        makeDefault: true,
+        label: "EBL.sheets.character"
+    });
     Items.unregisterSheet("core", ItemSheet);
-    Items.registerSheet("electricbastionland", ElectricBastionlandItemSheet, {makeDefault: true});
+    Items.registerSheet("electricbastionland", ElectricBastionlandItemSheet, {
+        makeDefault: true,
+        label: "EBL.sheets.item"
+    });
 
     game.electricbastionland = {
         apps: {

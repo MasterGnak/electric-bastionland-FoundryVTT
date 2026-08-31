@@ -5,16 +5,16 @@
 export class ElectricBastionlandItemSheet extends ItemSheet {
 
     /** @override */
-    static get defaultOptions () {
+    static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
             classes: ["electricbastionland", "sheet", "item"],
-            width: 420,
+            width: 500,
             height: 440
         });
     }
 
     /** @override */
-    get template () {
+    get template() {
         const path = "systems/electricbastionland/templates/item";
         return `${path}/item-sheet.html`;
     }
@@ -22,7 +22,7 @@ export class ElectricBastionlandItemSheet extends ItemSheet {
     /* -------------------------------------------- */
 
     /** @override */
-    getData () {
+    getData() {
         const context = super.getData();
         context.system = context.item.system;
         return context;
@@ -31,7 +31,7 @@ export class ElectricBastionlandItemSheet extends ItemSheet {
     /* -------------------------------------------- */
 
     /** @override */
-    setPosition (options = {}) {
+    setPosition(options = {}) {
         const position = super.setPosition(options);
         const sheetBody = this.element.find(".sheet-body");
         const bodyHeight = position.height - 192;
@@ -42,7 +42,7 @@ export class ElectricBastionlandItemSheet extends ItemSheet {
     /* -------------------------------------------- */
 
     /** @override */
-    activateListeners (html) {
+    activateListeners(html) {
         super.activateListeners(html);
 
         // Everything below here is only needed if the sheet is editable

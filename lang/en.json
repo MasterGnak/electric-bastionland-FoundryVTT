@@ -1,0 +1,53 @@
+{
+  "EBL": {
+    "name": "Name",
+    "failedCareer": "Failed Career",
+    "hp": "HP",
+    "hpFull": "Hit Protection",
+    "tooBulky": "Too BULKY!",
+    "deprived": "Deprived",
+    "armour": "Armour",
+    "stats": {
+      "str": "STR",
+      "dex": "DEX",
+      "cha": "CHA"
+    },
+    "rest": "Rest",
+    "restoreAbilities": "Restore Abilities",
+    "luck": "Luck",
+    "luckRoll": "Rolling Luck",
+    "description": "Description",
+    "items": "Items",
+    "boldMeansEquipped": "bold means equipped",
+    "itemName": "Name",
+    "bulky": "Bulky",
+    "blast": "Blast",
+    "equipped": "Equipped",
+    "quantity": "Quantity",
+    "numberOfUses": "# of Uses",
+    "damage": "Damage",
+    "createItem": "Create item",
+    "addItem": "Add item",
+    "editItem": "Edit Item",
+    "deleteItem": "Delete Item",
+    "newItem": "New Item",
+    "rollDamage": "Roll Damage",
+    "itemArmour": "Armour {armour}",
+    "itemDamage": "{formula} damage",
+    "damageWith": "Rolling damage with {item}",
+    "abilitySave": "Rolling {ability} save",
+    "rollUnderOrEqual": "under or equal",
+    "sheets": {
+      "character": "Electric Bastionland Character Sheet",
+      "item": "Electric Bastionland Item Sheet"
+    }
+  },
+  "TYPES": {
+    "Actor": {
+      "character": "Character"
+    },
+    "Item": {
+      "item": "Item"
+    }
+  }
+}

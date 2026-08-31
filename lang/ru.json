@@ -1,0 +1,53 @@
+{
+  "EBL": {
+    "name": "Имя",
+    "failedCareer": "Неудавшаяся карьера",
+    "hp": "ОЗ",
+    "hpFull": "Общая защита",
+    "tooBulky": "Слишком МНОГО!",
+    "deprived": "Бедствующий",
+    "armour": "Броня",
+    "stats": {
+      "str": "Сила",
+      "dex": "Ловкость",
+      "cha": "Харизма"
+    },
+    "rest": "Отдых",
+    "restoreAbilities": "Восстановление",
+    "luck": "Удача",
+    "luckRoll": "Проверка удачи",
+    "description": "Описание",
+    "items": "Снаряжение",
+    "boldMeansEquipped": "жирный значит экипированный",
+    "itemName": "Название",
+    "bulky": "Громоздкий",
+    "blast": "Взрыв",
+    "equipped": "Экипировано",
+    "quantity": "Количество",
+    "numberOfUses": "Применения",
+    "damage": "Урон",
+    "createItem": "Создать предмет",
+    "addItem": "Добавить предмет",
+    "editItem": "Изменить предмет",
+    "deleteItem": "Удалить предмет",
+    "newItem": "Новый предмет",
+    "rollDamage": "Бросить урон",
+    "itemArmour": "Броня: {armour}",
+    "itemDamage": "Урон: {formula}",
+    "damageWith": "Урон: {item}",
+    "abilitySave": "Спасбросок: {ability}",
+    "rollUnderOrEqual": "меньше или равно",
+    "sheets": {
+      "character": "Лист персонажа Electric Bastionland",
+      "item": "Лист предмета Electric Bastionland"
+    }
+  },
+  "TYPES": {
+    "Actor": {
+      "character": "Персонаж"
+    },
+    "Item": {
+      "item": "Предмет"
+    }
+  }
+}

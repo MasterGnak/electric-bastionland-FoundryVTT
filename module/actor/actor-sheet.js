@@ -12,7 +12,7 @@ export class ElectricBastionlandActorSheet extends ActorSheet {
                 "actor"
             ],
             template: "systems/electricbastionland/templates/actor/actor-sheet.html",
-            width: 500,
+            width: 600,
             height: 600,
             tabs: [
                 {
@@ -104,9 +104,9 @@ export class ElectricBastionlandActorSheet extends ActorSheet {
         // Get the type of item to create.
         const type = header.dataset.type;
         // Grab any data associated with this control.
-        const data = duplicate(header.dataset);
+        const data = foundry.utils.duplicate(header.dataset);
         // Initialize a default name.
-        const name = `New ${type.capitalize()}`;
+        const name = game.i18n.localize("EBL.newItem");
         // Prepare the item object.
         const itemData = {
             name: name,
@@ -132,7 +132,7 @@ export class ElectricBastionlandActorSheet extends ActorSheet {
 
         if (dataset.roll) {
             let roll = new Roll(dataset.roll, this.actor.system);
-            let label = dataset.label ? `Rolling ${dataset.label}` : '';
+            let label = dataset.label || '';
             roll.roll().then(result => {
                 result.toMessage({
                     speaker: ChatMessage.getSpeaker({actor: this.actor}),
