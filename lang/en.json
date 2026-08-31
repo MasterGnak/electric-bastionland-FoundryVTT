@@ -36,7 +36,8 @@
     "itemDamage": "{formula} damage",
     "damageWith": "Rolling damage with {item}",
     "abilitySave": "Rolling {ability} save",
-    "rollUnderOrEqual": "under or equal",
+    "success": "Success",
+    "failure": "Failure",
     "sheets": {
       "character": "Electric Bastionland Character Sheet",
       "item": "Electric Bastionland Item Sheet"

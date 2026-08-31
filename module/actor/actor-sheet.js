@@ -133,11 +133,17 @@ export class ElectricBastionlandActorSheet extends ActorSheet {
         if (dataset.roll) {
             let roll = new Roll(dataset.roll, this.actor.system);
             let label = dataset.label || '';
-            roll.roll().then(result => {
-                result.toMessage({
+            return roll.roll().then(async result => {
+                const messageData = {
                     speaker: ChatMessage.getSpeaker({actor: this.actor}),
                     flavor: label,
-                });
+                };
+                if (dataset.rollType === "ability") {
+                    messageData.content = await result.render({
+                        template: "systems/electricbastionland/templates/chat/ability-roll.html",
+                    });
+                }
+                return result.toMessage(messageData);
             });
         }
     }

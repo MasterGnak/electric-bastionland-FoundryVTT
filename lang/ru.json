@@ -36,7 +36,8 @@
     "itemDamage": "Урон: {formula}",
     "damageWith": "Урон: {item}",
     "abilitySave": "Спасбросок: {ability}",
-    "rollUnderOrEqual": "меньше или равно",
+    "success": "Успех",
+    "failure": "Провал",
     "sheets": {
       "character": "Лист персонажа Electric Bastionland",
       "item": "Лист предмета Electric Bastionland"

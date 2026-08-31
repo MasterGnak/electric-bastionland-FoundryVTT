@@ -117,6 +117,7 @@
                             for="system.abilities.{{ key }}.value"
                             class="resource-label rollable"
                             data-roll="1d20cs<@abilities.{{ key }}.value"
+                            data-roll-type="ability"
                             data-label="{{ localize 'EBL.abilitySave' ability=(localize (concat 'EBL.stats.' (toLowerCase key))) }}">
                         <i class="fas fa-dice-d20"></i> {{ localize (concat 'EBL.stats.' (toLowerCase key)) }}
                     </label>
