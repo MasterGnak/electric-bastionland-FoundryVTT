@@ -35,7 +35,7 @@
       "path": "lang/ru.json"
     }
   ],
-  "url": "https://github.com/mvdleden/electric-bastionland-FoundryVTT/",
+  "url": "https://github.com/MasterGnak/electric-bastionland-FoundryVTT/",
   "license": "LICENSE.txt",
   "version": "1.4.0",
   "compatibility": {
@@ -49,8 +49,8 @@
     "css/electricbastionland.css"
   ],
   "relationships": [],
-  "manifest": "https://raw.githubusercontent.com/mvdleden/electric-bastionland-FoundryVTT/master/system.json",
-  "download": "https://github.com/mvdleden/electric-bastionland-FoundryVTT/archive/1.3.0.zip",
+  "manifest": "https://raw.githubusercontent.com/MasterGnak/electric-bastionland-FoundryVTT/master/system.json",
+  "download": "https://github.com/MasterGnak/electric-bastionland-FoundryVTT/archive/1.4.0.zip",
   "socket": false,
   "id": "electricbastionland"
 }
