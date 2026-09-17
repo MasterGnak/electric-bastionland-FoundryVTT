@@ -2,8 +2,11 @@
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
+const TextEditorClass = foundry.applications?.ux?.TextEditor ?? globalThis.TextEditor;
+
 export class ElectricBastionlandActorSheet extends ActorSheet {
-    /** @override */
+    /* -------------------------------------------- */
+
     static get defaultOptions () {
         return foundry.utils.mergeObject(super.defaultOptions, {
             classes: [
@@ -24,11 +27,10 @@ export class ElectricBastionlandActorSheet extends ActorSheet {
         });
     }
 
-    /* -------------------------------------------- */
-    /** @override */
-    getData () {
-        const context = super.getData();
+    async getData () {
+        const context = await super.getData();
         context.system = context.actor.system;
+        context.enrichedBiography = await TextEditorClass.enrichHTML(context.system.biography);
 
         return context;
     }

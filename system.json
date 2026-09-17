@@ -37,7 +37,7 @@
   ],
   "url": "https://github.com/MasterGnak/electric-bastionland-FoundryVTT/",
   "license": "LICENSE.txt",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "compatibility": {
     "minimum": "12",
     "verified": "14"
@@ -50,7 +50,7 @@
   ],
   "relationships": [],
   "manifest": "https://raw.githubusercontent.com/MasterGnak/electric-bastionland-FoundryVTT/master/system.json",
-  "download": "https://github.com/MasterGnak/electric-bastionland-FoundryVTT/archive/1.4.0.zip",
+  "download": "https://github.com/MasterGnak/electric-bastionland-FoundryVTT/archive/1.4.1.zip",
   "socket": false,
   "id": "electricbastionland"
 }

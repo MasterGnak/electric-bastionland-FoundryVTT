@@ -2,7 +2,10 @@
  * Extend the basic ItemSheet with some very simple modifications
  * @extends {ItemSheet}
  */
+const TextEditorClass = foundry.applications?.ux?.TextEditor ?? globalThis.TextEditor;
+
 export class ElectricBastionlandItemSheet extends ItemSheet {
+
 
     /** @override */
     static get defaultOptions() {
@@ -21,10 +24,10 @@ export class ElectricBastionlandItemSheet extends ItemSheet {
 
     /* -------------------------------------------- */
 
-    /** @override */
-    getData() {
-        const context = super.getData();
+    async getData() {
+        const context = await super.getData();
         context.system = context.item.system;
+        context.enrichedDescription = await TextEditor.enrichHTML(context.system.description, { async: true });
         return context;
     }
 
